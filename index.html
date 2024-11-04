@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FiveLAPD Ventura County Sheriff's Office</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1 class="brand">FiveLAPD Ventura County Sheriff's Office</h1>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#divisions">Divisions</a>
+      <a href="#stations">Patrol Stations</a>
+      <a href="#services">Services</a>
+      <a href="#videos">Department Videos</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <!-- Overlay Menu for Small Screens -->
+  <div class="overlay" id="menuOverlay">
+    <div class="overlay-content">
+      <a href="#about" onclick="toggleMenu()">About Us</a>
+      <a href="#divisions" onclick="toggleMenu()">Divisions</a>
+      <a href="#stations" onclick="toggleMenu()">Patrol Stations</a>
+      <a href="#services" onclick="toggleMenu()">Services</a>
+      <a href="#videos" onclick="toggleMenu()">Department Videos</a>
+    </div>
+  </div>
+
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Welcome to the FiveLAPD Ventura County Sheriff's Office</h1>
+    <p>Serve With Integrity Protect With Honor</p>
+  </div>
+
+  <!-- About Us Section -->
+  <section id="about" class="content-section">
+    <h1>About Us</h1>
+    <p>Our mission is to uphold justice and ensure the safety of Ventura County's residents through service, protection, and collaboration with the community.</p>
+    <!-- Content similar to the original goes here -->
+  </section>
+
+  <!-- Divisions Section -->
+  <section id="divisions" class="content-section bg-light">
+    <h2>Divisions</h2>
+    <p>Explore our dedicated divisions that work tirelessly to maintain community safety.</p>
+    <ul class="list-unstyled">
+      <li>K9</li>
+      <li>Patrol</li>
+      <li>Investigations</li>
+      <li>Speed Interdiction Unit</li>
+      <li>Tactical Response Team</li>
+      <li>Remote Operations Unit/Search & Rescue</li>
+    </ul>
+  </section>
+
+  <!-- Patrol Stations Section -->
+  <section id="stations" class="content-section">
+    <h2>Patrol Stations</h2>
+    <p>Ventura County Sheriff's Office contracts with several cities in the surrounding area to provide Law Enforcement services.</p>
+    <ul class="list-unstyled">
+      <li>Fillmore</li>
+      <li>Thousand Oaks</li>
+      <li>Ojai</li>
+      <li>Camarillo</li>
+    </ul>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="content-section bg-light">
+    <h2>Services</h2>
+    <p>Access our range of services, including crime reporting, safety tips, and public alerts.</p>
+    <ul class="list-unstyled">
+      <li>File a Report</li>
+      <li>Request Records</li>
+      <li>Community Alerts</li>
+    </ul>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="videos" class="content-section">
+    <h2>Department Videos</h2>
+    <p>Learn more about the Ventura County Sheriff's Office and our services.</p>
+    <video width="600" height="480" controls><source src="vcso2.mp4"></video>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 FiveLAPD Ventura County Sheriff's Office</p>
+  </footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
