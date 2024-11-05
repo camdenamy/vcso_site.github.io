@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: fa;
+  src: url(BoliviaSignature-ZpWnz.ttf);
+}
+
 body {
   font-family: Arial, sans-serif;
   background-image: url('VCSO_Discord.png');
@@ -141,6 +146,11 @@ body {
 .list-unstyled {
   list-style-type: none;
   padding: 0;
+}
+
+#about strong {
+  font-family: fa;
+  font-size: 3.5rem;
 }
 
 #videos video {
