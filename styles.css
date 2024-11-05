@@ -153,6 +153,10 @@ body {
   font-size: 3.5rem;
 }
 
+#videos {
+  text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.7);  
+}
+
 #videos video {
   width: 100%;
   height: auto;
