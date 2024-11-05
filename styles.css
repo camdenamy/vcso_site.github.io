@@ -1,172 +1,159 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-image: url('VCSO_Discord.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
-    color: white;
-    line-height: 1.6;
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1em 2em;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5em;
-    transition: color 0.3s;
-  }
-  
-  .navbar a:hover {
-    color: #aaa;
-  }
-  
-  .brand {
-    font-size: 1.7em;
-    font-weight: bold;
-  }
-  
-  .menu-icon {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('VCSO_Discord.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background covers the screen */
+  background-position: center center; /* Centers the background on the screen */
+  background-attachment: fixed;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #aaa;
+}
+
+.brand {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Overlay Menu for Small Screens */
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: height 0.5s ease;
+  z-index: 1;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.overlay-content a {
+  padding: 15px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.overlay-content a:hover {
+  color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navbar nav {
     display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-  }
-  
-  /* Overlay Menu for Small Screens */
-  .overlay {
-    height: 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow: hidden;
-    transition: height 0.5s ease;
-    z-index: 1;
-  }
-  
-  .overlay-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px; /* Add some space from the top */
-  }
-  
-  .overlay-content a {
-    padding: 15px;
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .overlay-content a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 768px) {
-    .navbar nav {
-      display: none; /* Hide navbar links on small screens */
-    }
-  
-    .menu-icon {
-      display: block; /* Show menu icon on small screens */
-    }
-  }
-  
-  /* Header Section */
-  .header {
-    background-image: url('VSO209.PNG');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
-  }
-  
-  .header p {
-    font-size: 1.2em;
-    text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
-  }
-  
-  /* Content Section */
-  .content-section {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .bg-light {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
-  }
-  
-  .content-section h1, .content-section h2 {
-    margin-bottom: 20px;
-  }
-  
-  .content-section p {
-    margin-bottom: 20px;
-  }
-  
-  .list-unstyled {
-    list-style-type: none;
-    padding: 0;
   }
 
-  #about {
-    text-shadow: 8px 4px 6px rgba(0, 0, 0, 0.7);
+  .menu-icon {
+    display: block;
   }
+}
 
-  #stations {
-    text-shadow: 8px 4px 6px rgba(0, 0, 0, 0.7);
-  }
+/* Header Section */
+.header {
+  background-image: url('VSO209.PNG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-  #videos {
-    text-shadow: 8px 4px 6px rgba(0, 0, 0, 0.7);
-  }
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+}
 
-  #videos video {
-    width: 100%;
-    height: auto;
-    max-width: 1000px;
-    margin: 0 auto;    
-  }
-  
-  /* Footer */
-  footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1em 0;
-    text-align: center;
-    color: white;
-  }
-  
+.header p {
+  font-size: 1.2em;
+  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Content Section */
+.content-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+.content-section h1, .content-section h2 {
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  margin-bottom: 20px;
+}
+
+.list-unstyled {
+  list-style-type: none;
+  padding: 0;
+}
+
+#videos video {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em 0;
+  text-align: center;
+  color: white;
+}
