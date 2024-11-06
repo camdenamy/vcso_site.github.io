@@ -12,7 +12,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('VCSO_Discord.png');
+  background-image: url('images/VCSO_Discord.png');
   background-repeat: no-repeat;
   background-size: cover; /* Ensures the background covers the screen */
   background-position: center center; /* Centers the background on the screen */
@@ -101,7 +101,7 @@ body {
 
 /* Header Section */
 .header {
-  background-image: url('VSO209.PNG');
+  background-image: url('images/VSO209.PNG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -126,7 +126,7 @@ body {
 
 /* Content Section */
 .content-section {
-  padding: 50px 20px;
+  padding: 20px 20px;
   text-align: center;
 }
 
@@ -135,8 +135,9 @@ body {
   color: black;
 }
 
-.content-section h1, .content-section h2 {
+.content-section h1 {
   margin-bottom: 20px;
+  font-size: 2.5rem;
 }
 
 .content-section p {
@@ -153,6 +154,34 @@ body {
   font-size: 3.5rem;
 }
 
+.divisions a {
+  color: black;
+  text-decoration: none;
+}
+
+.divisions:visited a {
+  color: black;
+}
+
+.divisions:hover a, .divisions:focus a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.stations a {
+  color: black;
+  text-decoration: none;
+}
+
+.stations:visited a {
+  color: black;
+}
+
+.stations:hover a, .stations:focus a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .apply-btn {
   background-color: #027a02;
   color: white;
@@ -165,6 +194,7 @@ body {
 
 .apply-btn:hover {
   background-color: #d1983e;
+  cursor: pointer;
 }
 
 #videos {
@@ -186,14 +216,9 @@ footer {
   color: white;
 }
 
-/* Apply Page*/
-.apply {
-  font-family: Arial, sans-serif;
-  background-image: url('VCSO_Discord.png');
-  background-repeat: no-repeat;
-  background-size: cover; /* Ensures the background covers the screen */
-  background-position: center center; /* Centers the background on the screen */
-  background-attachment: fixed;
-  color: white;
-  line-height: 1.6;
+/*Divisions*/
+
+.rou {
+  width: 50%;
+  height: auto;
 }
