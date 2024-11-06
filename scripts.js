@@ -24,4 +24,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     // Toggle menu icon between hamburger and X
     menuIcon.textContent = menuOverlay.style.height === '100vh' ? '✕' : '☰';
   }
+
+  function applyNow() {
+    // Redirect to the application page or perform another action
+    window.location.href = "apply.html"; // Replace with the actual application link
+  }
   

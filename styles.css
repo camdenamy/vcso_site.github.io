@@ -153,6 +153,20 @@ body {
   font-size: 3.5rem;
 }
 
+.apply-btn {
+  background-color: #027a02;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #d1983e;
+}
+
 #videos {
   text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.7);  
 }
@@ -170,4 +184,16 @@ footer {
   padding: 1em 0;
   text-align: center;
   color: white;
+}
+
+/* Apply Page*/
+.apply {
+  font-family: Arial, sans-serif;
+  background-image: url('VCSO_Discord.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background covers the screen */
+  background-position: center center; /* Centers the background on the screen */
+  background-attachment: fixed;
+  color: white;
+  line-height: 1.6;
 }
