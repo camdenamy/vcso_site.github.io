@@ -1,17 +1,23 @@
 // Smooth Scrolling for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      const offset = 60; // Adjust offset height in pixels
-      const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
-  
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    
+    if (targetElement) {
+      const headerOffset = 80; // Adjust this value to the height of your header
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+      
       window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
+        top: offsetPosition,
+        behavior: "smooth"
       });
-    });
+    }
   });
+});
   
   // Toggle Menu for Small Screens
   function toggleMenu() {

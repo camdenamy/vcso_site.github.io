@@ -216,9 +216,28 @@ footer {
   color: white;
 }
 
-/*Divisions*/
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.image-container img {
+  max-width: 100%; /* Image scales with the container's width */
+  height: auto; /* Maintains the aspect ratio */
+  display: block;
+  margin: 0 auto; /* Centers the image within the container */
+}
 
 .rou {
   width: 50%;
   height: auto;
+}
+
+/* Additional styling for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .content-section img {
+    width: 90%; /* Scale down further for smaller screens */
+  }
 }
