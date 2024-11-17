@@ -14,11 +14,12 @@ body {
   font-family: Arial, sans-serif;
   background-image: url('images/VCSO_Discord.png');
   background-repeat: no-repeat;
-  background-size: cover; /* Ensures the background covers the screen */
-  background-position: center center; /* Centers the background on the screen */
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   color: white;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 /* Navbar */
@@ -107,23 +108,54 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 30vh;
+  height: 30vh; /* Adjusts height relative to the viewport */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 10px; /* Adds spacing for small screens */
+  box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+  overflow: hidden; /* Prevents any overflow of content */
 }
 
 .header h1 {
-  font-size: 2.5em;
+  font-size: calc(1.5rem + 1vw); /* Dynamically adjusts based on screen width */
   margin-bottom: 10px;
-  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.2;
 }
 
 .header p {
-  font-size: 1.2em;
-  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+  font-size: calc(1rem + 0.5vw); /* Dynamically adjusts based on screen width */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: 40vh; /* Increase height for smaller screens to fit text */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .header h1 {
+    font-size: 1.8rem; /* Reduce font size for small screens */
+  }
+
+  .header p {
+    font-size: 1rem; /* Reduce font size for small screens */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header h1 {
+    font-size: 3rem; /* Scale up font size for larger screens */
+  }
+
+  .header p {
+    font-size: 1.5rem; /* Scale up font size for larger screens */
+  }
 }
 
 /* Content Section */
