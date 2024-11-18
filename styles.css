@@ -158,6 +158,30 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto; /* Adjusts height based on content */
+    padding: 30px 10px; /* Adds space for smaller screens */
+  }
+
+  .header h1 {
+    font-size: 1.8em; /* Scales down the header text for smaller screens */
+  }
+
+  .header p {
+    font-size: 1em; /* Scales down paragraph text */
+  }
+}
+
+.sheriff {
+  height: auto;
+  width: 100%;
+  max-width: 315px;
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
 /* Content Section */
 .content-section {
   padding: 20px 20px;
