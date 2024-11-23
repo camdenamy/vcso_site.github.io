@@ -215,6 +215,23 @@ body {
   cursor: pointer;
 }
 
+.click-here p {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.click-here a {
+  color: #027a02;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.click-here a:hover {
+  color:#d1983e;
+  transform: scale(2.0);
+}
+
 .apply-btn {
   background-color: #027a02;
   color: white;
