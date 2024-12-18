@@ -447,3 +447,86 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+  }
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker navbar */
+  }
+
+  .navbar a {
+    color: #e0e0e0; /* Light text for links */
+  }
+
+  .navbar a:hover {
+    color: #aaa; /* Slightly lighter hover */
+  }
+
+  .content-section, .fleet-videos .ulc-vids, .service-fleet-page .content-section {
+    background-color: rgba(30, 30, 30, 0.9); /* Darker content background */
+    color: #e0e0e0; /* Light text */
+    border: 1px solid #444; /* Darker border */
+  }
+
+  .grid-container {
+    background-color: #1e1e1e; /* Dark background for grid */
+  }
+
+  .grid-item p {
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background for captions */
+    color: #e0e0e0; /* Light text for captions */
+  }
+
+  .apply-btn {
+    background-color: #444; /* Darker button */
+    color: #e0e0e0; /* Light text */
+  }
+
+  .apply-btn:hover {
+    background-color: #777; /* Lighter on hover */
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark footer background */
+    color: #e0e0e0;
+  }
+
+  .click-here a, .click-here-fleet a {
+    color: #8bc34a; /* Light green text for links */
+  }
+
+  .click-here a:hover, .click-here-fleet a:hover {
+    color: #d1983e; /* Light orange on hover */
+  }
+
+  .fleet-videos .ulc-vids h1, .service-fleet-page .content-section h1 {
+    color: #e0e0e0; /* Light text for headings */
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.95); /* Darker overlay background */
+  }
+
+  .overlay-content a {
+    color: #e0e0e0; /* Light text for overlay links */
+  }
+
+  .overlay-content a:hover {
+    color: #8bc34a; /* Green hover effect */
+  }
+}
+
+/* Ensure links in dark mode remain consistent */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8bc34a;
+  text-decoration: underline;
+}
