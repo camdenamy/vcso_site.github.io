@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Fleet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fleet-videos">
+
+  <!-- Navbar -->
+    <div class="navbar">
+        <a class="brand" href="index.html">FiveLAPD Ventura County Sheriff's Office</a>
+        <nav>
+            <a href="#patrol">Patrol Fleet</a>
+            <a href="#siu">SIU Fleet</a>
+            <a href="#k9">K9 Fleet</a>
+            <a href="#rou">ROU Fleet</a>
+            <a href="#nciu">MCU/NCIU Fleet</a>
+            <a href="#trt">TRT Fleet</a>
+            <a href="#misc">Misc</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+
+  <!-- Overlay Menu for Small Screens -->
+    <div class="overlay" id="menuOverlay">
+        <div class="overlay-content">
+            <a href="#patrol" onclick="toggleMenu()">Patrol Fleet</a>
+            <a href="#siu" onclick="toggleMenu()">SIU Fleet</a>
+            <a href="#k9" onclick="toggleMenu()">K9 Fleet</a>
+            <a href="#rou" onclick="toggleMenu()">ROU Fleet</a>
+            <a href="#nciu" onclick="toggleMenu()">MCU/NCIU Fleet</a>
+            <a href="#trt" onclick="toggleMenu()">TRT Fleet</a>
+            <a href="#misc" onclick="toggleMenu()">Misc</a>
+        </div>
+    </div>
+
+    <div class="ulc-vids">
+        <h1>Below are some videos demonstrating VCSO's ULC lighting system</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <video width="600" height="480" controls><source src="videos/2016_Explorer_ULC.mp4"></video>
+                <p>2016 Explorer</p>
+            </div>
+            <div class="grid-item">
+                <video width="600" height="480" controls><source src="videos/2016_Explorer_V2.mp4"></video>
+                <p>2016 Explorer V2</p>
+            </div>
+            <div class="grid-item">
+                <video width="600" height="480" controls><source src="videos/2018_Charger_ULC.mp4"></video>
+                <p>2018 Dodge Charger</p>
+            </div>
+            <div class="grid-item">
+                <video width="600" height="480" controls><source src="videos/2018_Tahoe_ULC.mp4"></video>
+                <p>2018 Chevy Tahoe</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 FiveLAPD Ventura County Sheriff's Office</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
