@@ -491,7 +491,7 @@ footer {
   }
 
   footer {
-    background-color: rgba(0, 0, 0, 0.9); /* Dark footer background */
+    background-color: transparent; /* Dark footer background */
     color: #e0e0e0;
   }
 
