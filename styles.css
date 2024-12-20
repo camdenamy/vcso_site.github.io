@@ -131,6 +131,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   line-height: 1.5;
   margin: 0;
+  color: #FFD700;;
 }
 
 @media screen and (max-width: 768px) {
@@ -188,8 +189,7 @@ body {
 }
 
 #about h2 {
-  color: #777;
-  text-decoration: underline;
+  color: #FFD700;
 }
 
 #about p {
