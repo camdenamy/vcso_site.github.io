@@ -36,3 +36,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     window.location.href = "apply.html"; // Replace with the actual application link
   }
   
+  document.addEventListener("DOMContentLoaded", function () {
+    const thumbnails = document.querySelectorAll(".video-thumbnail");
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener("click", function () {
+            const videoSrc = this.getAttribute("data-video");
+            const videoElement = document.createElement("video");
+
+            videoElement.setAttribute("width", "400");
+            videoElement.setAttribute("height", "300");
+            videoElement.setAttribute("controls", "true");
+            videoElement.setAttribute("autoplay", "true");
+
+            const sourceElement = document.createElement("source");
+            sourceElement.setAttribute("src", videoSrc);
+            sourceElement.setAttribute("type", "video/mp4");
+
+            videoElement.appendChild(sourceElement);
+
+            this.parentNode.replaceChild(videoElement, this);
+        });
+    });
+});
